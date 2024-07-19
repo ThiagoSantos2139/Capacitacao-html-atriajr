@@ -1,0 +1,407 @@
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*configurações gerais do site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* definição de fonte*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* criando cores padrões para o site */
+:root{
+    --black: #000000;
+    --aliceblue: #f0f8ff;
+    --roxo: #845aea;
+    --degrade-btn: linear-gradient(#0081c9, #845aea);
+    --degrade-btn-grey: linear-gradient(#272728, #444444);
+    --pantoneblue: #0081c9;
+}
+
+/* definição de classes */
+.background-roxo{
+    background: var(--roxo)
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/*configurações de tamanho das sections e do footer*/
+section,
+footer{
+    padding: 2.7rem 0;
+}
+
+.btn-gradient{
+    padding: 10px 25px;
+    color: var(--aliceblue);
+    border: none;
+    cursor: pointer;
+    background: var(--degrade-btn);
+    border-radius: 15px
+}
+
+.btn-gradient-grey{
+    padding: 10px 25px;
+    color: var(--aliceblue);
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrade-btn-grey);
+    border-radius: 15px
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a img{
+    width: 150px;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+}
+
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a{
+    color: var(--aliceblue);
+}
+
+/* main*/
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text{
+    width: 50%;
+    color: var(--aliceblue);
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img{
+    width: 50%;
+}
+
+.main-img img{
+    width: 100%;
+}
+
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.resultados{
+ background: var(--pantoneblue);
+}
+
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados .resultados-text{
+    color: var(--aliceblue);
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.resultados ,.resultados-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--aliceblue);
+}
+
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.resultados .resultados-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px var(--roxo);
+}
+
+.diferenciais .card img{
+    width: 60px;
+}
+
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+.viagem .container{
+    display: flex;
+    align-items: center;
+}
+
+.viagem .foto{
+    width: 50%;
+}
+
+.viagem .foto img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.viagem .text{
+    width: 50%;
+    padding-left: 90px;
+}
+
+.viagem .text h2{
+    font-size: 2.5rem;
+}
+
+.viagem .text p{
+    margin: 20px 0;
+    color: var(--black);
+}
+
+.viagem .text p b{
+    color: var(--black);
+    font-size: 25px;
+}
+
+.areas .roxo{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.areas h2{
+    font-size: 2.5rem;
+}
+
+.areas .container{
+    display: column;
+    align-items: center;
+}
+
+.areas .card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.areas .card .card-item{
+    width: 22%;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px 0;
+    border-radius: 20px;
+}
+
+.areas .card img{
+    width: 100px;
+    height: 100px;
+}
+
+.areas .card .card-item:hover{
+    box-shadow: 0px 35px 97px -15px var(--roxo);
+}
+
+.areas .card b{
+    margin: 5px 0;
+}
+
+.areas .card .btn-gradient-expansivo{
+    width: 80%;
+    height: 40px;
+    color: var(--aliceblue);
+    border: none;
+    cursor: pointer;
+    background: var(--degrade-btn);
+    border-radius: 15px
+}
+
+.areas .card .btn-gradient-grey-expansivo{
+    width: 80%;
+    height: 40px;
+    color: var(--aliceblue);
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrade-btn-grey);
+    border-radius: 15px
+}
+
+footer{
+    background-color: var(--roxo);
+}
+
+footer .container{
+    display: flex;
+    color: var(--aliceblue);
+}
+
+footer .container ul{
+    width: 48%;
+    text-align: center;
+}
+
+footer .container h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer .container .redes-sociais img{
+    margin-right: 10px;
+}
+
+footer .container ul > p{
+    margin-bottom: 40px;
+}
+
+footer .container li{
+    margin: 10px 0;
+}
+
+footer .container a{
+    color: var(--aliceblue);
+}
+
+/* responsividade */
+@media (max-width: 960px){
+    .menu-icon{
+        display: block;
+    }
+    .ul{
+        position: fixed;
+        background: var(--roxo);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ul li{
+        font-size: 20px;
+        margin: 20px;
+    }
+    .ul.ativo{
+        left: 0;
+    }
+    main .container{
+        flex-direction: column;
+    }
+    main .container .main-img,
+    main .container .main-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .container .main-text h1{
+        font-size: 4rem;
+    }
+    main .container .main-text div{
+        justify-content: center;
+    }
+
+    .resultados .container{
+        flex-direction: column;
+    }
+
+    .resultados .resultados-text,
+    .resultados .resultados-numero{
+        width: 100%;
+        text-align: center;
+    }
+
+    .resultados-numero{
+        margin-top: 30px;
+    }
+
+    .diferenciais .container{
+        flex-direction: column;
+    }
+    
+    .diferenciais .card{
+        width: 100%;
+    }
+
+    .viagem .container{
+        flex-direction: column-reverse;
+    }
+
+    .viagem .text,
+    .viagem .foto{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .areas .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .areas .card .card-item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 455px){
+    .resultados .resultados-numero{
+        flex-direction: column;
+    }
+
+    main .container .main-text h1{
+        font-size: 3rem;
+    }
+}
